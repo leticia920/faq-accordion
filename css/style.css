@@ -1,0 +1,129 @@
+body {
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+
+  max-width: 1440px;
+  padding: 120px 0px 120px 0px; /*top, right, bottom, left*/
+  
+  background: linear-gradient(to bottom, hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+
+.card {
+  display: flex; /*direction por defecto row*/
+  flex: 1 0 100%; /* Flex: toma 3 parámetros: 1) flex-grow 2) flex-shrink 3) flex-basis*/
+
+  max-width: 900px;
+  background-color: white;
+  border-radius: 40px;
+
+  background-image: url(.././images/bg-pattern-desktop.svg);
+  background-position: -600px -250px;
+  background-repeat: no-repeat;
+}
+
+.accordion {
+  padding: 40px 0px 0px 40px; /*top, right, bottom, left*/
+}
+
+.tittle{
+  font-size: 30px !important;
+  font-weight: 700 !important;
+}
+
+.question{
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgb(233,233,233);
+  padding-top: 15px;
+}
+.question:hover{
+  font-weight: 700;
+}
+
+.arrowdown{
+  height: 10px;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.arrowup{
+  transform:rotate(180deg)
+}
+
+.answer{
+  display: none;
+  max-width: 320px;
+}
+
+.images{
+  padding: 80px 50px 80px 0px;
+  overflow: hidden;
+}
+.img-woman{
+  margin-left: -90px;
+}
+.img-box{
+  position: absolute;
+  margin-top:134px;
+  margin-left:-99px;
+}
+
+/* Mobile */
+.img-bg{
+  display: none;
+}
+.img-mobile-woman{
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    width: 100%;
+    padding: 120px 50px 120px 50px; /*top, right, bottom, left*/
+  }
+
+  .card{
+    background-image: none;
+    padding: 30px 33px 50px 33px; /*top, right, bottom, left*/
+    margin-top: 30px;
+  }
+
+  .tittle{
+    text-align: center;
+  }
+
+  .images{
+    padding: 0;
+  }
+
+  .accordion{
+    margin-top: 100px;
+  }
+
+  .img-box{
+    display: none;
+  }
+
+  .img-woman{
+    display: none;
+  }
+
+  .img-bg{
+    display: block;
+    position: absolute;
+    margin-left: 65px;
+  }
+
+  .img-mobile-woman{
+    display: block;
+    position: absolute;
+    margin-top: -120px;
+    margin-left:35px;
+  }
+}

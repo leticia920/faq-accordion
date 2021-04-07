@@ -1,0 +1,22 @@
+$(function(){
+  $("#que1").click(function(){
+    $("#answ1").toggle()
+    $("#arrow1").toggleClass("arrowup")
+  })
+  $("#que2").click(function(){
+    $("#answ2").toggle()
+    $("#arrow2").toggleClass("arrowup")
+  })
+  $("#que3").click(function(){
+    $("#answ3").toggle()
+    $("#arrow3").toggleClass("arrowup")
+  })
+  $("#que4").click(function(){
+    $("#answ4").toggle()
+    $("#arrow4").toggleClass("arrowup")
+  })
+  $("#que5").click(function(){
+    $("#answ5").toggle()
+    $("#arrow5").toggleClass("arrowup")
+  })
+})
